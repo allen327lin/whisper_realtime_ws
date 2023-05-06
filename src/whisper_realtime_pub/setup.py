@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': ['go = whisper_realtime_pub.teleop_realtime_pub:main',
-                            'test = whisper_realtime_pub.hello_world:main'
+                            'test = whisper_realtime_pub.hello_world:main',
+                            'teleop = whisper_realtime_pub.teleop_pub:main'
         ],
     },
 )

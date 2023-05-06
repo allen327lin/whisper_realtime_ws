@@ -1,4 +1,5 @@
 [console_scripts]
 go = whisper_realtime_pub.teleop_realtime_pub:main
+teleop = whisper_realtime_pub.teleop_pub:main
 test = whisper_realtime_pub.hello_world:main
 

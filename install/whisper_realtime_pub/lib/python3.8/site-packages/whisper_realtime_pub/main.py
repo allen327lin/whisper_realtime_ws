@@ -3,8 +3,7 @@ import whisper
 from clear_folder import clean_folder
 import numpy as np
 
-
-def main():
+def mic():
     model = whisper.load_model("small")
 
     path = './wav/'
@@ -30,8 +29,9 @@ def main():
                                       temperature=0.4)
             # print("b")
             print(i + ': ' + result["text"])
+            print(result["text"], file=open('result.txt', 'w'))
             os.remove(path + i)
 
 
 if __name__ == '__main__':
-    main()
+    mic()

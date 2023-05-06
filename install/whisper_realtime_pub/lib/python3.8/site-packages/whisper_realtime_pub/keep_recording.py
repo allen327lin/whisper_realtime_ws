@@ -1,4 +1,5 @@
-from record import *
+import sounddevice as sd
+from scipy.io.wavfile import write
 import time
 from clear_folder import clean_folder
 import numpy as np
