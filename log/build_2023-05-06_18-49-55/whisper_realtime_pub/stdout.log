@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info
+writing ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/PKG-INFO
+writing dependency_links to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/dependency_links.txt
+writing entry points to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/entry_points.txt
+writing requirements to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/requires.txt
+writing top-level names to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/top_level.txt
+writing manifest file '../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt'
+reading manifest file '../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt'
+writing manifest file '../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib/whisper_realtime_pub
+copying whisper_realtime_pub/__init__.py -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib/whisper_realtime_pub
+copying whisper_realtime_pub/teleop_realtime_pub.py -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib/whisper_realtime_pub
+running install
+running install_lib
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub
+copying /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib/whisper_realtime_pub/__init__.py -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub
+copying /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build/lib/whisper_realtime_pub/teleop_realtime_pub.py -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub
+byte-compiling /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub/teleop_realtime_pub.py to teleop_realtime_pub.cpython-38.pyc
+running install_data
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/share/ament_index
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/share/ament_index/resource_index
+creating /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/share/ament_index/resource_index/packages
+copying resource/whisper_realtime_pub -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/share/whisper_realtime_pub
+running install_egg_info
+Copying ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub-0.0.0-py3.8.egg-info
+running install_scripts
+Installing go = whisper_realtime_pub.teleop_realtime_pub:maintest script to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/whisper_realtime_pub
+writing list of installed files to '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/install.log'

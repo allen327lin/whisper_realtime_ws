@@ -1,0 +1,5 @@
+  File "/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub/teleop_realtime_pub.py", line 6
+    import
+          ^
+SyntaxError: invalid syntax
+

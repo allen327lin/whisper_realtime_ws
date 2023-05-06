@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/PKG-INFO
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/dependency_links.txt
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/entry_points.txt
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/requires.txt
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/top_level.txt
+../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/zip-safe
+resource/whisper_realtime_pub
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+whisper_realtime_pub/__init__.py
+whisper_realtime_pub/hello_world.py
+whisper_realtime_pub/teleop_realtime_pub.py

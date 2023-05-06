@@ -19,7 +19,8 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': ['go = whisper_realtime_pub.teleop_realtime_pub:main',
+                            'test = whisper_realtime_pub.hello_world:main'
         ],
     },
 )
