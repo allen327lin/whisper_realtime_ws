@@ -13,5 +13,11 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 whisper_realtime_pub/__init__.py
+whisper_realtime_pub/clear_folder.py
+whisper_realtime_pub/detect.py
 whisper_realtime_pub/hello_world.py
+whisper_realtime_pub/keep_recording.py
+whisper_realtime_pub/main.py
+whisper_realtime_pub/record.py
 whisper_realtime_pub/teleop_realtime_pub.py
+whisper_realtime_pub/temp.py
