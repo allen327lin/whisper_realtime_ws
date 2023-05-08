@@ -1,0 +1,23 @@
+[0.514s] Invoking command in '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/src/whisper_realtime_pub': PYTHONPATH=/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/prefix_override:/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/whisper_realtime_pub build --build-base /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build install --record /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/install.log --install-scripts $base/lib/whisper_realtime_pub --single-version-externally-managed
+[0.690s] running egg_info
+[0.690s] writing ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/PKG-INFO
+[0.690s] writing dependency_links to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/dependency_links.txt
+[0.691s] writing entry points to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/entry_points.txt
+[0.691s] writing requirements to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/requires.txt
+[0.691s] writing top-level names to ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/top_level.txt
+[0.714s] reading manifest file '../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt'
+[0.715s] writing manifest file '../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info/SOURCES.txt'
+[0.715s] running build
+[0.715s] running build_py
+[0.715s] running install
+[0.716s] running install_lib
+[0.717s] running install_data
+[0.717s] running install_egg_info
+[0.718s] removing '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub-0.0.0-py3.8.egg-info' (and everything under it)
+[0.718s] Copying ../../build/whisper_realtime_pub/whisper_realtime_pub.egg-info to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages/whisper_realtime_pub-0.0.0-py3.8.egg-info
+[0.719s] running install_scripts
+[0.730s] Installing go script to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/whisper_realtime_pub
+[0.731s] Installing teleop script to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/whisper_realtime_pub
+[0.731s] Installing test script to /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/whisper_realtime_pub
+[0.731s] writing list of installed files to '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/install.log'
+[0.746s] Invoked command in '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/src/whisper_realtime_pub' returned '0': PYTHONPATH=/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/prefix_override:/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/install/whisper_realtime_pub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/whisper_realtime_pub build --build-base /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/build install --record /home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/build/whisper_realtime_pub/install.log --install-scripts $base/lib/whisper_realtime_pub --single-version-externally-managed

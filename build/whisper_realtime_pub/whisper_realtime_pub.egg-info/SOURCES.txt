@@ -16,6 +16,6 @@ whisper_realtime_pub/__init__.py
 whisper_realtime_pub/clear_folder.py
 whisper_realtime_pub/hello_world.py
 whisper_realtime_pub/keep_recording.py
-whisper_realtime_pub/main.py
 whisper_realtime_pub/teleop_pub.py
 whisper_realtime_pub/temp.py
+whisper_realtime_pub/whisper_realtime.py

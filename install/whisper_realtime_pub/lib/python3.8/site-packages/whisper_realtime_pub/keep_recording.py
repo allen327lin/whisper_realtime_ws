@@ -78,5 +78,5 @@ def record(length):
 
 
 if __name__ == '__main__':
-    length = 1.5
+    length = 1
     record(length)

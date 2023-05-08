@@ -19,7 +19,7 @@ WAFFLE_MAX_LIN_VEL = 0.26
 WAFFLE_MAX_ANG_VEL = 1.82
 
 LIN_VEL_STEP_SIZE = 0.01*4
-ANG_VEL_STEP_SIZE = 0.1*8
+ANG_VEL_STEP_SIZE = 0.1*5
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
@@ -106,8 +106,10 @@ def main():
     cur_cmd = ''
     cmds = ['前', '後', '左', '右', '停']
     txt_abs_path = os.path.abspath(os.getcwd())+'/src/whisper_realtime_pub/whisper_realtime_pub/result.txt'
-    pre_result = ''
-    result = ''
+    try:
+        result_txt = open(txt_abs_path, 'r').read()
+    except:
+        open(txt_abs_path, mode='w').close()
 
     settings = None
     if os.name != 'nt':
@@ -134,32 +136,33 @@ def main():
                     check_linear_limit_velocity(target_linear_velocity + LIN_VEL_STEP_SIZE)
                 status = status + 1
                 print_vels(target_linear_velocity, target_angular_velocity)
-                os.remove(txt_abs_path)
+                print('', file=open(txt_abs_path, 'w'))
+                print("y")
             elif key == 'x' or cur_cmd == '後':
                 target_linear_velocity = \
                     check_linear_limit_velocity(target_linear_velocity - LIN_VEL_STEP_SIZE)
                 status = status + 1
                 print_vels(target_linear_velocity, target_angular_velocity)
-                os.remove(txt_abs_path)
+                print('', file=open(txt_abs_path, 'w'))
             elif key == 'a' or cur_cmd == '左':
                 target_angular_velocity = \
                     check_angular_limit_velocity(target_angular_velocity + ANG_VEL_STEP_SIZE)
                 status = status + 1
                 print_vels(target_linear_velocity, target_angular_velocity)
-                os.remove(txt_abs_path)
+                print('', file=open(txt_abs_path, 'w'))
             elif key == 'd' or cur_cmd == '右':
                 target_angular_velocity = \
                     check_angular_limit_velocity(target_angular_velocity - ANG_VEL_STEP_SIZE)
                 status = status + 1
                 print_vels(target_linear_velocity, target_angular_velocity)
-                os.remove(txt_abs_path)
+                print('', file=open(txt_abs_path, 'w'))
             elif key == ' ' or key == 's' or cur_cmd == '停':
                 target_linear_velocity = 0.0
                 control_linear_velocity = 0.0
                 target_angular_velocity = 0.0
                 control_angular_velocity = 0.0
                 print_vels(target_linear_velocity, target_angular_velocity)
-                os.remove(txt_abs_path)
+                print('', file=open(txt_abs_path, 'w'))
             else:
                 if (key == '\x03'):
                     break
@@ -171,18 +174,22 @@ def main():
 
 
 
-            try:
-                result_txt = open(txt_abs_path, 'r').read()
-                # if result != pre_result:
-                #     print(result)
-                #     pre_result = result
-                for i in cmds:
-                    if result_txt.find(i) > -1:
-                        print(result_txt)
-                        cur_cmd = i
-            except:
-                result_txt = ''
-                cur_cmd = ''
+            result_txt = ''
+            cur_cmd = ''
+            result_txt = open(txt_abs_path, 'r').read()
+            # print("txt_abs_path:", result_txt)
+            # if result != pre_result:
+            #     print(result)
+            #     pre_result = result
+            for i in cmds:
+                if result_txt.find(i) > -1:
+                    print(result_txt)
+                    cur_cmd = i
+                    break
+                # else:
+                #     result_txt = ''
+                #     cur_cmd = ''
+
 
 
 
