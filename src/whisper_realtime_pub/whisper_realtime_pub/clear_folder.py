@@ -7,5 +7,5 @@ def clean_folder(path):
         os.remove(path + i)
 
 if __name__ == '__main__':
-    path = './wav/'
+    path = 'recording_wav_output/'
     clean_folder(path)

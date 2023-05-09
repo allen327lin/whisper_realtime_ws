@@ -1,1 +1,3 @@
-/src/whisper_realtime_pub/whisper_realtime_pub/whisper_realtime/wav/
+src/whisper_realtime_pub/whisper_realtime_pub/recording_wav_output/*
+
+temp.py
