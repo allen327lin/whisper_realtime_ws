@@ -109,6 +109,7 @@ def main():
     try:
         result_txt = open(txt_abs_path, 'r').read()
     except:
+        result_txt = ''
         open(txt_abs_path, mode='w').close()
 
     settings = None
@@ -137,7 +138,6 @@ def main():
                 status = status + 1
                 print_vels(target_linear_velocity, target_angular_velocity)
                 print('', file=open(txt_abs_path, 'w'))
-                print("y")
             elif key == 'x' or cur_cmd == '後':
                 target_linear_velocity = \
                     check_linear_limit_velocity(target_linear_velocity - LIN_VEL_STEP_SIZE)
@@ -174,21 +174,15 @@ def main():
 
 
 
+
             result_txt = ''
             cur_cmd = ''
             result_txt = open(txt_abs_path, 'r').read()
-            # print("txt_abs_path:", result_txt)
-            # if result != pre_result:
-            #     print(result)
-            #     pre_result = result
             for i in cmds:
                 if result_txt.find(i) > -1:
                     print(result_txt)
                     cur_cmd = i
                     break
-                # else:
-                #     result_txt = ''
-                #     cur_cmd = ''
 
 
 
