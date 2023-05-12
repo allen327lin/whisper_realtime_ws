@@ -38,6 +38,7 @@ a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi 
 space key, s : force stop
 
 CTRL-C to quit
+
 """
 
 e = """
@@ -180,7 +181,7 @@ def main():
             result_txt = open(txt_abs_path, 'r').read()
             for i in cmds:
                 if result_txt.find(i) > -1:
-                    print(result_txt)
+                    print('\n'+result_txt, end='')
                     cur_cmd = i
                     break
 

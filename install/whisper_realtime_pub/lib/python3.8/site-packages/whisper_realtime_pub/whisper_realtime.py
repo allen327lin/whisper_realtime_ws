@@ -7,7 +7,7 @@ from hanziconv import HanziConv
 def whisper_realtime():
     model = whisper.load_model("base")
 
-    path = './wav/'
+    path = 'recording_wav_output/'
     while 1:
         try:
             files = os.listdir(path)

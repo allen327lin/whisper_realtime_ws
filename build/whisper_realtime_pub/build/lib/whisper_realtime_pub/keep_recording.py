@@ -53,7 +53,7 @@ def record(length):
     seconds = float(length)  # Duration of recording
     recording = Queue(concatenated_segments_in_wav)
 
-    path = './wav/'
+    path = 'recording_wav_output/'
     try:
         files = os.listdir(path)
     except:
@@ -70,10 +70,10 @@ def record(length):
         # print(recording.q[0])
         wav = np.concatenate(recording.q, axis=0)
         print(wav)
-        # wav = scipy.vstack((recording.q[0], recording.q[1]))
+        # recording_wav_output = scipy.vstack((recording.q[0], recording.q[1]))
         current_t = str(int(time.time() * 100))
-        write(path + 'output_' + current_t + '.wav', fs, wav)  # Save as WAV file
-        print("output_" + current_t + ".wav: {:.1f}s recording finished.".format(seconds))
+        write(path + 'output_' + current_t + '.recording_wav_output', fs, wav)  # Save as WAV file
+        print("output_" + current_t + ".recording_wav_output: {:.1f}s recording finished.".format(seconds))
 
 
 
