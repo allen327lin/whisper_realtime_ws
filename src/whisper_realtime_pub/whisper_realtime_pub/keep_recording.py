@@ -47,7 +47,7 @@ class Queue:
         else:
             return 0
 
-def record(length):
+def main(length = 1):
     concatenated_segments_in_wav = 2
     fs = 16000  # Sample rate
     seconds = float(length)  # Duration of recording
@@ -79,4 +79,4 @@ def record(length):
 
 if __name__ == '__main__':
     length = 1
-    record(length)
+    main(length)

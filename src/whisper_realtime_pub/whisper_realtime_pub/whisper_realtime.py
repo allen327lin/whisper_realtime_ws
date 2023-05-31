@@ -4,7 +4,7 @@ from clear_folder import clean_folder
 import numpy as np
 from hanziconv import HanziConv
 
-def whisper_realtime():
+def main():
     model = whisper.load_model("base")
 
     path = 'recording_wav_output/'
@@ -36,4 +36,4 @@ def whisper_realtime():
 
 
 if __name__ == '__main__':
-    whisper_realtime()
+    main()
