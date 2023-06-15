@@ -106,7 +106,8 @@ def check_angular_limit_velocity(velocity):
 def main():
     cur_cmd = ''
     cmds = ['前', '後', '左', '右', '停']
-    txt_abs_path = os.path.abspath(os.getcwd())+'/src/whisper_realtime_pub/whisper_realtime_pub/result.txt'
+    # txt_abs_path = os.path.abspath(os.getcwd())+'/src/whisper_realtime_pub/whisper_realtime_pub/result.txt'
+    txt_abs_path = 'result.txt'
     try:
         result_txt = open(txt_abs_path, 'r').read()
     except:
