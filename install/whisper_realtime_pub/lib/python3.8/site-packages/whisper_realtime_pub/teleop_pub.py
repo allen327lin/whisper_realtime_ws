@@ -106,8 +106,7 @@ def check_angular_limit_velocity(velocity):
 def main():
     cur_cmd = ''
     cmds = ['前', '後', '左', '右', '停']
-    # txt_abs_path = os.path.abspath(os.getcwd())+'/src/whisper_realtime_pub/whisper_realtime_pub/result.txt'
-    txt_abs_path = 'result.txt'
+    txt_abs_path = '/home/allen/Documents/PyCharm/Projects/whisper_realtime_ws/src/whisper_realtime_pub/whisper_realtime_pub/result.txt'
     try:
         result_txt = open(txt_abs_path, 'r').read()
     except:
@@ -135,6 +134,7 @@ def main():
         while (1):
             key = get_key(settings)
             if key == 'w' or cur_cmd == '前':
+                print("front")
                 target_linear_velocity = \
                     check_linear_limit_velocity(target_linear_velocity + LIN_VEL_STEP_SIZE)
                 status = status + 1
@@ -180,6 +180,7 @@ def main():
             result_txt = ''
             cur_cmd = ''
             result_txt = open(txt_abs_path, 'r').read()
+            # print(result_txt)
             for i in cmds:
                 if result_txt.find(i) > -1:
                     print('\n'+result_txt, end='')
